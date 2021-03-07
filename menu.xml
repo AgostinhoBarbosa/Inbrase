@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <menuitem label="_t{Administration}">
+    <icon>fas:home fa-fw #ffd700</icon>
+    <menu>
+      <menuitem label="Dashboard">
+        <action>SystemAdministrationDashboard</action>
+        <icon>fas:tachometer-alt fa-fw #ffd700</icon>
+      </menuitem>
+      <menuitem label="_t{Programs}">
+        <action>SystemProgramList</action>
+        <icon>far:file-code fa-fw #ffd700</icon>
+      </menuitem>
+      <menuitem label="_t{Groups}">
+        <action>SystemGroupList</action>
+        <icon>fas:users fa-fw #ffd700</icon>
+      </menuitem>
+      <menuitem label="_t{Units}">
+        <action>SystemUnitList</action>
+        <icon>fas:university fa-fw #ffd700</icon>
+      </menuitem>
+      <menuitem label="_t{Users}">
+        <action>SystemUserList</action>
+        <icon>fas:user fa-fw #ffd700</icon>
+      </menuitem>
+      <menuitem label="_t{Database explorer}">
+        <action>SystemDatabaseExplorer</action>
+        <icon>fas:database fa-fw #ffd700</icon>
+      </menuitem>
+      <menuitem label="_t{SQL Panel}">
+        <action>SystemSQLPanel</action>
+        <icon>fas:table fa-fw #ffd700</icon>
+      </menuitem>
+      <menuitem label="_t{Menu editor}">
+        <action>SystemMenuEditor</action>
+        <icon>far:edit fa-fw #ffd700</icon>
+      </menuitem>
+      <menuitem label="PHP Info">
+        <action>SystemPHPInfoView</action>
+        <icon>fas:info-circle fa-fw #ffd700</icon>
+      </menuitem>
+      <menuitem label="_t{Preferences}">
+        <action>SystemPreferenceForm#method=onEdit</action>
+        <icon>fas:cog fa-fw #ffd700</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="_t{Documents}">
+    <icon>far:file-alt fa-fw #ff4500</icon>
+    <menu>
+      <menuitem label="_t{Send document}">
+        <action>SystemDocumentUploadForm</action>
+        <icon>fas:cloud-upload-alt fa-fw #ff4500</icon>
+      </menuitem>
+      <menuitem label="_t{My documents}">
+        <action>SystemDocumentList</action>
+        <icon>fas:archive fa-fw #ff4500</icon>
+      </menuitem>
+      <menuitem label="_t{Shared with me}">
+        <action>SystemSharedDocumentList</action>
+        <icon>fas:share-alt fa-fw #ff4500</icon>
+      </menuitem>
+      <menuitem label="_t{Categories}">
+        <action>SystemDocumentCategoryFormList</action>
+        <icon>fas:th fa-fw #ff4500</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Logs">
+    <icon>fas:desktop fa-fw #b22222</icon>
+    <menu>
+      <menuitem label="Dashboard">
+        <action>SystemLogDashboard</action>
+        <icon>fas:tachometer-alt fa-fw #b22222</icon>
+      </menuitem>
+      <menuitem label="_t{Access Log}">
+        <action>SystemAccessLogList</action>
+        <icon>fas:key fa-fw #b22222</icon>
+      </menuitem>
+      <menuitem label="_t{Change Log}">
+        <action>SystemChangeLogView</action>
+        <icon>fas:film fa-fw #b22222</icon>
+      </menuitem>
+      <menuitem label="_t{SQL Log}">
+        <action>SystemSqlLogList</action>
+        <icon>fas:database fa-fw #b22222</icon>
+      </menuitem>
+      <menuitem label="_t{Request Log}">
+        <action>SystemRequestLogList</action>
+        <icon>fas:globe fa-fw #b22222</icon>
+      </menuitem>
+      <menuitem label="_t{PHP Log}">
+        <action>SystemPHPErrorLogView</action>
+        <icon>fas:exclamation-triangle fa-fw #b22222</icon>
+      </menuitem>
+      <menuitem label="Session dump">
+        <action>SystemSessionDumpView</action>
+        <icon>fas:code fa-fw #b22222</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Cadastros">
+    <icon>far:address-card fa-fw #deb887</icon>
+    <menu>
+      <menuitem label="Textos">
+        <action>textosList</action>
+        <icon>fas:archive fa-fw #b0e0e6</icon>
+      </menuitem>
+      <menuitem label="Calendario">
+        <action>CalendarioForm</action>
+        <icon>fas:archive fa-fw #b0e0e6</icon>
+      </menuitem>
+      <menuitem label="Status Processo">
+        <action>statusList</action>
+        <icon>far:address-card fa-fw #deb887</icon>
+      </menuitem>
+      <menuitem label="Clientes">
+        <action>pessoaList</action>
+        <icon>far:address-card fa-fw #deb887</icon>
+      </menuitem>
+      <menuitem label="Tipos de Arquivo">
+        <action>TipoarquivoList</action>
+        <icon>far:address-card fa-fw #deb887</icon>
+      </menuitem>
+      <menuitem label="Tipos de Serviço">
+        <action>tiposervicoList</action>
+        <icon>far:address-card fa-fw #deb887</icon>
+      </menuitem>
+      <menuitem label="Texto Devolução">
+        <action>textoDevolucaoList</action>
+        <icon>far:archive fa-fw #deb887</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Financeiro">
+    <icon>far:money-bill-alt fa-fw #29cf2e</icon>
+    <menu>
+      <menuitem label="Bancos">
+        <action>bancoList</action>
+        <icon>far:money-bill-alt fa-fw #29cf2e</icon>
+      </menuitem>
+      <menuitem label="Tipo de Lançamento">
+        <action>tipolancamentoFormList</action>
+        <icon>far:money-bill-alt fa-fw #29cf2e</icon>
+      </menuitem>
+      <menuitem label="Conta Corrente">
+        <action>contacorrenteList</action>
+        <icon>far:money-bill-alt fa-fw #29cf2e</icon>
+      </menuitem>
+      <menuitem label="Recibos">
+        <action>comprovanteList</action>
+        <icon>far:money-bill-alt fa-fw #29cf2e</icon>
+      </menuitem>
+      <menuitem label="Recibo Prestador">
+        <action>recibosList</action>
+        <icon>far:money-bill-alt fa-fw #29cf2e</icon>
+      </menuitem>
+      <menuitem label="Títulos">
+        <action>tituloList</action>
+        <icon>far:money-bill-alt fa-fw #29cf2e</icon>
+      </menuitem>
+      <menuitem label="Caixa">
+        <action>caixaList</action>
+        <icon>far:money-bill-alt fa-fw #29cf2e</icon>
+      </menuitem>
+      <menuitem label="Extrato Conta Corrente">
+        <action>extratoCaixaReport</action>
+        <icon>far:file-pdf fa-fw #ff0000</icon>
+      </menuitem>
+      <menuitem label="Resultado Período">
+        <action>resultadoReport</action>
+        <icon>far:file-pdf fa-fw #ff0000</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Processos">
+    <action>processoaList</action>
+    <icon>fas:car-crash fa-fw #c42c6c</icon>
+  </menuitem>
+  <menuitem label="Verifica Processos">
+    <action>verificaProcesso</action>
+    <icon>fas:car-side fa-fw #e01168</icon>
+  </menuitem>
+  <menuitem label="Logout">
+    <action>LoginForm#method=onLogout#static=1</action>
+    <icon>fas:sign-out-alt fa-fw #ff0000</icon>
+  </menuitem>
+</menu>

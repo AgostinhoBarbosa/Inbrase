@@ -1,0 +1,21 @@
+{
+    "name": "interpid/fpdf",
+    "description": "Fpdf Addons",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Interpid",
+            "email": "office@interpid.eu"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^7.4",
+        "phpmetrics/phpmetrics": "^2.4"
+    },
+    "autoload": {
+        "classmap": [
+			"library/fpdf",
+			"library/interpid"
+        ]
+    }
+}

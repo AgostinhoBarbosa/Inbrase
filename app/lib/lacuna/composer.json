@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "files": [
+      "storage-mock.php",
+      "config.php"
+    ]
+  },
+  "require": {
+    "lacuna/restpki-client": "^2.3.1"
+  }
+}

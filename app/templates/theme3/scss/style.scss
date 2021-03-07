@@ -1,0 +1,473 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import 'variables';
+
+html, body {
+  background: $dash-background;
+  height: 95.5%;
+  margin: 0px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+/** Parts of Page */
+@import "parts/sidebar";
+@import "parts/userbar";
+@import "parts/content_sidebar";
+@import "parts/search";
+
+/** Components not present in boot */
+@import "components/form";
+@import "components/paginator";
+@import "components/content_box";
+@import "components/nav";
+@import "components/collapse";
+@import "components/icons";
+@import "components/messages";
+
+/** CSS App */
+@import "apps/app_home";
+@import "apps/app_users";
+@import "apps/app_companies";
+@import "apps/app_realty";
+
+html {
+  width: 100% !important;
+}
+
+body {
+  margin: 0 !important;
+  min-height: 100% !important;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #fff !important;
+}
+
+.main-header {
+  background-color: $color-default !important;
+  .logo {
+    background-color: $color-default !important;
+  }
+  .navbar {
+    background-color: $color-default !important;
+  }
+}
+
+.main-sidebar {
+  width: 245px !important;
+  background-color: white !important;
+}
+
+.user-header {
+  background-color: $color-default !important;
+}
+
+.sidebar-menu {
+  .header {
+    background-color: $color-default !important;
+    color: white !important;
+  }
+
+  .treeview {
+    .treeview-menu {
+      li:hover {
+        a {
+          span {
+            color: lightseagreen !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.treeview-menu {
+  li {
+    a {
+      span {
+        font-weight: bolder !important;
+      }
+
+      :active {
+        span {
+          color: red !important;
+        }
+      }
+    }
+
+  }
+}
+
+.alert-yellow {
+  color: #000;
+  background-color: #FFFF00;
+  border-color: #d6e9c6;
+}
+
+.alert-Gainsboro {
+  color: #fff;
+  background-color: #DCDCDC;
+  border-color: #d6e9c6;
+}
+
+.alert-turquesa {
+  color: #fff;
+  background-color: #00CED1;
+  border-color: #d6e9c6;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.right-panel {
+  width: 50% !important;
+}
+
+.content-wrapper {
+  min-height: 94vh !important;
+  flex-basis: 100%;
+  background-color: $dash-background !important;
+  color: $color-gray-medium !important;
+
+  .content{
+    padding: 0 !important;
+  }
+
+  .container-fluid {
+    width: 92% !important;
+    margin-left: 1px !important;
+    padding-left: 1px !important;
+    padding-right: unset !important;
+    margin-top: -3px !important;
+
+    .nav {
+      flex-direction: unset;
+    }
+
+    .nav-link {
+      height: 40px !important;
+
+      .active {
+        color: red !important;
+      }
+    }
+
+    .close {
+      margin-left: 10px !important;
+      margin-top: -2px !important;
+      color: #0c0c0c !important;
+      font-size: smaller !important;
+    }
+
+    .tbreadcrumb {
+      display: none !important;
+    }
+
+    .tab-content {
+      .panel-heading {
+        text-align: center !important;
+
+        .panel-title {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+}
+
+.table-responsive{
+  overflow: unset;
+}
+
+.login-avatar {
+  span {
+    color: red !important;
+  }
+}
+
+.tpagenavigation_resume {
+  color: white !important;
+  font-weight: 800;
+}
+
+
+.empresa {
+  color: white !important;
+  font-size: 20px !important;
+  background-color: transparent !important;
+  font-weight: 400 !important;
+}
+
+#div_breadcrumbs {
+  display: none !important;
+}
+
+.nav-tabs {
+  background-color: #fff !important;
+
+  .nav-item {
+    border: 1px solid #cecece;
+    border-radius: 5px !important;
+    background: white !important;
+
+    .close {
+      margin-left: 10px !important;
+      margin-top: -2px !important;
+      color: #0c0c0c !important;
+      font-size: smaller !important;
+    }
+
+    .nav-link.active {
+      background: rosybrown !important;
+      color: white !important;
+
+      .close {
+        color: white !important;
+      }
+    }
+
+  }
+}
+
+.tempo_sessao {
+  float: left;
+  color: white !important;
+  margin-top: 7px !important;
+  margin-right: 30px !important;
+  font-size: x-large !important;
+}
+
+label {
+  font-size: 1rem !important;
+}
+
+input {
+  font-size: 1rem !important;
+  border-radius: .25rem !important;
+  height: 34px !important;
+  border: solid !important;
+  border-width: 1px !important;
+  border-color: #cecece !important;
+
+  &[aria-label="Código"] {
+    text-align: center !important;
+    color: blue !important;
+    font-weight: 900 !important;
+  }
+
+  &[widget="tspinner"] {
+    text-align: center !important;
+    color: red !important;
+    font-weight: 900 !important;
+  }
+}
+
+textarea {
+  border-radius: .25rem !important;
+  border: solid !important;
+  border-width: 1px !important;
+}
+
+select {
+  border-radius: .25rem !important;
+  height: 34px !important;
+  border: solid !important;
+  border-width: 1px !important;
+}
+
+#comunication_shared {
+  width: 410px;
+
+  .card-item {
+    width: 400px;
+  }
+}
+
+.select2-container {
+  border-radius: .25rem !important;
+  min-height: 34px !important;
+  border: solid !important;
+  border-width: 1px !important;
+}
+
+.select2-selection__clear {
+  color: #ff0000 !important;
+}
+
+.select2-selection--single {
+  border: none !important;
+}
+
+.tdatagrid_action:first-child {
+  border-top: 1px solid #cecece !important;
+  border-left: 1px solid #cecece !important;
+  border-bottom: 1px solid #cecece !important;
+}
+
+
+.tdatagrid_action:nth-child(1n) {
+  border-top: 1px solid #cecece !important;
+  border-bottom: 1px solid #cecece !important;
+}
+
+
+.tdatagrid_action:last-child {
+  border-top: 1px solid #cecece !important;
+  border-right: 1px solid #cecece !important;
+  border-bottom: 1px solid #cecece !important;
+}
+
+.tdatagrid_col {
+  border: 1px solid #cecece !important;
+  text-align: center !important;
+  background-color: lightyellow !important;
+}
+
+.tdatagrid_footer {
+  background-color: gray !important;
+
+  td {
+    border: 1px solid black !important;
+    color: white !important;
+    font-weight: 700 !important;
+
+    b {
+      color: white !important;
+      font-weight: 700 !important;
+    }
+  }
+}
+
+.tdatagrid_cell {
+  border: 1px solid #cecece !important;
+}
+
+th {
+  .tdatagrid_cell {
+    border: 1px solid #cecece !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: 30px !important;
+    max-width: 30px !important;
+  }
+}
+
+.info {
+  td {
+    background-color: #00b0e4 !important;
+    color: #fff;
+  }
+
+  th {
+    background-color: #00b0e4 !important;
+    color: #fff;
+  }
+}
+
+.action {
+  text-align: center !important;
+}
+
+.ml-20 {
+  margin-left: 20rem !important;
+}
+
+#cab_detalhe {
+  border: 1px solid #cecece !important;
+  text-align: center !important;
+  background-color: lightyellow !important;
+  vertical-align: middle !important;
+  color: red !important;
+  font-weight: 900 !important;
+}
+
+.card-header {
+  height: 43px !important;
+  background-color: lightseagreen !important;
+  color: white !important;
+  font-weight: 90 !important;
+
+  .card-title {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+  }
+}
+
+.sidebar {
+  .user-info {
+    height: 87px !important;
+
+    .image {
+      display: flex !important;
+
+      .name {
+        color: white !important;
+        padding: 20px !important;
+        font-weight: 800 !important;
+      }
+    }
+
+    .info-container {
+      top: -29px !important;
+    }
+  }
+}
+
+.panel-footer {
+  background-color: lightseagreen !important;
+}
+
+.btn {
+  border-radius: 3px !important;
+}
+
+.btn-top {
+  margin-top: 28px !important;
+}
+
+.tdate-group {
+  input {
+    text-align: center !important;
+    color: red !important;
+    font-weight: 700 !important;
+  }
+}
+
+.ui-dialog-titlebar {
+  background-color: lightseagreen !important;
+  text-align: center !important;
+}
+
+.ui-dialog-title {
+  color: white !important;
+  font-weight: 700 !important;
+}
+
+.tcombo {
+  border: 1px solid #cecece !important;
+}
+
+/** RWD */
+@media (min-width: $dash-rwd-breakpoint-1) {
+  .on_mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: $dash-rwd-breakpoint-3) {
+  .no_mobile {
+    display: none !important;
+  }
+  .navbar {
+    display: none !important;
+  }
+}
+
+

@@ -1,0 +1,109 @@
+<!-- [main] -->
+<script type="text/javascript">
+    $("input").attr('class', 'form-control');
+    $("select").attr('class', 'form-control');
+    $("span .select2 .select2-container .select2-container--default").attr('class', 'form-control');
+</script>
+{$container}
+<div class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class=" col-md-1">
+                    <label for="id">Processo</label>
+                    {$id}
+                </div>
+                <div class=" col-md-1">
+                    <label for="placa">Placa</label>
+                    {$placa}
+                </div>
+                <div class=" col-md-2">
+                    <label for="chassi">Chassi</label>
+                    {$chassi}
+                </div>
+                <div class=" col-md-2">
+                    <label for="motor">Motor</label>
+                    {$motor}
+                </div>
+                <div class=" col-md-2">
+                    <label for="sinistro">Nº. Sinistro</label>
+                    {$sinistro}
+                </div>
+                <div class=" col-md-4">
+                    <label for="usuario">Usuário</label>
+                    {$usuario}
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-md-2">
+                    <label for="$data_cadastro_ini">Data Cadastro Inicial</label>
+                    {$data_cadastro_ini}
+                </div>
+                <div class=" col-md-2">
+                    <label for="data_cadastro_fim">Data Cadastro Final</label>
+                    {$data_cadastro_fim}
+                </div>
+                <div class=" col-md-4">
+                    <label for="id_seguradora">Seguradora</label>
+                    {$id_seguradora}
+                </div>
+                <div class=" col-md-4">
+                    <label for="$status">Status</label>
+                    {$status}
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-md-2">
+                    <label for="$processo_origem">N. Processo de Origem</label>
+                    {$processo_origem}
+                </div>
+                <div class=" col-md-2">
+                    <label for="processo_reintegracao">N. Processo Reintegração</label>
+                    {$processo_reintegracao}
+                </div>
+                <div class=" col-md-2">
+                    <label for="cidade_rec">Cidade Recuperação</label>
+                    {$cidade_rec}
+                </div>
+                <div class=" col-md-2">
+                    <label for="uf_rec">UF Recuperação</label>
+                    {$uf_rec}
+                </div>
+                <div class=" col-md-4">
+                    <label for="liberador">Liberador</label>
+                    {$liberador}
+                </div>
+            </div>
+            <div class="row">
+                <div class="panel  panel-green">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class=" col-md-1">
+                                {$search_button}
+                            </div>
+                            <div class=" col-md-1">
+                                {$new_button}
+                            </div>
+                            <div class=" col-md-1">
+                                {$export_button}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [grid] -->
+            <div class="row">
+                <div class="col-md-12">
+                    {$datagrid}
+                </div>
+                <div class="col-md-12">
+                    {$pageNavigation}
+                </div>
+            </div>
+            <!-- [/grid] -->
+        </div>
+    </div>
+</div>
+<!-- [/main] -->

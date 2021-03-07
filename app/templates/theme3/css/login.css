@@ -1,0 +1,116 @@
+/** COLOR's DEFAULT **/
+/** LOGIN - LEFT */
+/** LOGIN - RIGHT */
+/** DASH - SIDEBAR */
+/** DASH - CONTENT */
+/** DASH - RWD */
+/**
+FONT SYSTEM
+ */
+/**
+COLOR SYSTEM
+ */
+/** Auto generate buttons, gradients */
+/**
+RADIUS SYSTEM
+ */
+/**
+INDEX SYSTEM
+ */
+/** CONFIG */
+html, body {
+  min-height: 100vh;
+  background-color: white;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/** SCREEN */
+.navbar-light {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: lightseagreen !important;
+}
+.navbar-light a {
+  color: white !important;
+  font-size: 3em !important;
+}
+
+div[form=form_login] .panel-heading {
+  background: lightseagreen !important;
+}
+div[form=form_login] .panel-heading .panel-title {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.tfield {
+  height: 35px !important;
+}
+
+.login-avatar {
+  width: 90px !important;
+}
+
+/** RESPONSIVE */
+@media (max-width: 66em) {
+  .dash_login_right {
+    display: none;
+  }
+
+  .dash_login_left {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 40em) {
+  .dash_login_left_box {
+    width: 100%;
+  }
+}
+
+.container {
+  margin    : 0px;
+  max-width : 100% !important;
+  padding   : 0px;
+}
+
+.row {
+  margin  : 0px;
+  padding : 0px;
+  width   : 100% !important;
+}
+
+.container-login-adianti {
+  align-items         : center;
+  background-position : center;
+  background-repeat   : no-repeat;
+  background-size     : cover;
+  display             : -webkit-box;
+  display             : -webkit-flex;
+  display             : -moz-box;
+  display             : -ms-flexbox;
+  display             : flex;
+  flex-wrap           : wrap;
+  justify-content     : center;
+
+  min-height          : 100vh;
+  padding             : 15px;
+  position            : relative;
+  width               : 100%;
+  z-index             : 1;
+}
+
+.login100-title-adianti {
+  color       : #66b864;
+  display     : block;
+  font-family : Poppins-Bold;
+  font-size   : 36px;
+  line-height : 1.2;
+  margin-top  : 70px;
+  text-align  : center;
+  width       : 100%;
+}
+
+/*# sourceMappingURL=login.css.map */
